@@ -14,7 +14,7 @@ const BooksPage = async () => {
 
     return (
         <div className="container mx-auto grid gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
-            {books.map((book:IBook) => (
+            {books.slice(0, 4).map((book:IBook) => (
                 <BookCard key={book.bookId} book={book} />
             ))}
         </div>

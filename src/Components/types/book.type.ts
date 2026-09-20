@@ -1,5 +1,5 @@
 export interface IBook {
-    bookId: number;
+  bookId: number;
   bookName: string;
   author: string;
   image: string;

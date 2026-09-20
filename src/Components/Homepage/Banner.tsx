@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import bannerImg from '@/assets/hero_img.jpg'
+import Link from 'next/link';
 
 const Banner = () => {
     return (
@@ -10,9 +11,12 @@ const Banner = () => {
                     <h2 className='text-4xl font-bold'>
                         Books to freshen up <br /> your book shelf
                     </h2>
+                    <Link href="/books">
                     <button className='btn btn-success'>
                         Explore
                     </button>
+                    </Link>
+                    
                 </div>
                 <div>
                     <Image className='rounded-4xl' src={bannerImg} alt='img'></Image>
