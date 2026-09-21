@@ -38,7 +38,7 @@ const Navbar = () => {
                   </ul>
                 </details>
               </li>
-              <li><a>Item 3</a></li>
+              <li><Link href="/listed-books">listed-books</Link></li>
             </ul>
           </div>
           <div className="navbar-end gap-2">

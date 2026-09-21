@@ -1,6 +1,8 @@
 import { IBook } from '@/Components/types/book.type';
 import Image from 'next/image';
 import React from 'react';
+import ReadButton from '@/Components/Bookdetail/ReadButton';
+import WishListButton from '@/Components/Bookdetail/WishList';
 
 interface IbookDetailParamsProps {
     params: Promise<{
@@ -96,12 +98,8 @@ const bookDetailPage = async ({ params }: IbookDetailParamsProps) => {
 
                     {/* Action */}
                     <div className="card-actions justify-end mt-4">
-                        <button className="btn btn-primary">
-                            READ
-                        </button>
-                        <button className="btn btn-primary">
-                            Wishlist
-                        </button>
+                        <ReadButton book={book}></ReadButton>
+                        <WishListButton book={book}></WishListButton>
                     </div>
 
                 </div>
