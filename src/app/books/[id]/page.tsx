@@ -97,7 +97,10 @@ const bookDetailPage = async ({ params }: IbookDetailParamsProps) => {
                     {/* Action */}
                     <div className="card-actions justify-end mt-4">
                         <button className="btn btn-primary">
-                            View Details
+                            READ
+                        </button>
+                        <button className="btn btn-primary">
+                            Wishlist
                         </button>
                     </div>
 
