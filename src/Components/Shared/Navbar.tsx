@@ -13,31 +13,22 @@ const Navbar = () => {
               <ul
                 tabIndex={-1}
                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                
+                <li><Link href="/">Home</Link></li>
                 <li><Link href="/books">Books</Link></li>
-                <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </li>
-                <li><a>Item 3</a></li>
+                <li><Link href="/listed-books">listed-books</Link></li>
               </ul>
             </div>
-            <a className=" font-bold btn btn-ghost text-xl">Book Vibe</a>
+            <Link href="/" className=" font-bold btn btn-ghost text-xl">Book Vibe</Link>
           </div>
+
+
+
+
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
+              <li><Link href="/">Home</Link></li>
               <li><Link href="/books">Books</Link></li>
-              <li>
-                <details>
-                  <summary>Parent</summary>
-                  <ul className="p-2 bg-base-100 w-40 z-1">
-                    <li><a>Submenu 1</a></li>
-                    <li><a>Submenu 2</a></li>
-                  </ul>
-                </details>
-              </li>
               <li><Link href="/listed-books">listed-books</Link></li>
             </ul>
           </div>
